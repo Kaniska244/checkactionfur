@@ -17,6 +17,7 @@ jobs:
           echo "${{ github.workspace }}"
           cd ./
           pwd
+          tree
     
       - id: github-output
         name: Execute DevContainer commands
