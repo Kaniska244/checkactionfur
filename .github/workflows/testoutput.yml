@@ -10,6 +10,11 @@ jobs:
   outputtest:
     runs-on: ubuntu-latest
     steps:
+      - name: set config
+        run: |
+          set -e
+          echo "${GITHUB_WORKSPACE}"
+    
       - id: github-output
         name: Execute DevContainer commands
         uses: devcontainers/ci@v0.3.1900000349
