@@ -17,6 +17,8 @@ jobs:
           echo "${{ github.workspace }}"
           cd ./
           pwd
+          cd ..
+          ls -lha
           tree
     
       - id: github-output
