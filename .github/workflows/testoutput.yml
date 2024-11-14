@@ -14,7 +14,7 @@ jobs:
         name: Execute DevContainer commands
         uses: actions/checkout@v3
         with: 
-          runCmd: |
+          run: |
             echo "foo=bar" >> $GITHUB_OUTPUT
 
       - name: get output
