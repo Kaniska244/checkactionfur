@@ -10,12 +10,10 @@ jobs:
   outputtest:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - id: github-output
         name: Execute DevContainer commands
-        uses: actions/checkout@v3
-        with: 
-          run: |
-            echo "foo=bar" >> $GITHUB_OUTPUT
+        run: echo "foo=bar" >> $GITHUB_OUTPUT
 
       - name: get output
         run: |
