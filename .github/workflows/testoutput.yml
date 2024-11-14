@@ -24,4 +24,4 @@ jobs:
           set -e
           echo "Test output.."
           echo "${{ steps.devcontainer-build.outputs.foo }}"
-          echo "Value printed now.."
+          echo "Value printed and action completes.."
