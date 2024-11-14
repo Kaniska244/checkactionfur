@@ -12,7 +12,7 @@ jobs:
     steps:
       - id: github-output
         name: Execute DevContainer commands
-        uses: devcontainers/ci@v0.3.1900000349
+        uses: actions/checkout@v3
         with: 
           runCmd: |
             echo "foo=bar" >> $GITHUB_OUTPUT
