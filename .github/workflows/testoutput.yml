@@ -14,6 +14,7 @@ jobs:
         run: |
           set -e
           echo "${GITHUB_WORKSPACE}"
+          echo "${{ github.workspace }}"
           cd ./
           pwd
     
