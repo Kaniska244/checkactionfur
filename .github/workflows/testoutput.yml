@@ -14,11 +14,9 @@ jobs:
         run: |
           set -e
           echo "${GITHUB_WORKSPACE}"
-          echo "${{ github.workspace }}"
-          cd ./
+          cd ${GITHUB_WORKSPACE}
           pwd
-          cd ../..
-          pwd
+          ls -lrt
           ls -lha
           tree
     
