@@ -9,6 +9,8 @@ on:
 jobs:
   outputtest:
     runs-on: ubuntu-latest
+    outputs:
+      foo: ${{ steps.devcontainer-build.outputs.foo }}    
     steps:
       - uses: actions/checkout@v4
     
