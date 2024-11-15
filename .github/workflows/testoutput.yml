@@ -26,7 +26,7 @@ jobs:
           set -e
           echo "Test output.."
           echo "${{ steps.devcontainer-build.outputs.foo }}"
-          echo "Value printed and action completes.."
+          echo "Value printed and action complete.."
 
   nextvaluetest:
     runs-on: ubuntu-latest
