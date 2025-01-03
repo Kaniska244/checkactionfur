@@ -1,4 +1,16 @@
 {
-  "name": "Ubuntu",
-  "image": "mcr.microsoft.com/devcontainers/base:jammy"
+	"name": "Core (build)",
+	"build": {
+		"dockerfile": "../Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+			"moby": false,
+			"installDockerBuildx": true,
+			"installDockerComposeSwitch": true,
+			"version": "23.0.1",
+			"dockerDashComposeVersion": "v2"
+		},
+		"ghcr.io/devcontainers-extra/features/cosign:1": {}
+	}
 }
