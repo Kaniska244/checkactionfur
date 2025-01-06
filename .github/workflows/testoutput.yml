@@ -8,7 +8,7 @@ on:
 
 jobs:
   docker-build:
-    runs-on: ubuntu-latest
+    runs-on: making/nodejs-dind
     steps:
       - name: Checkout (GitHub)
         uses: actions/checkout@v3
